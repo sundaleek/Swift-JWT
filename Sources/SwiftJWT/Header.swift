@@ -78,10 +78,11 @@ public struct Header: Codable {
         x5t: String? = nil,
         x5tS256: String? = nil,
         cty: String? = nil,
-        crit: [String]? = nil
+        crit: [String]? = nil,
+        alg: String? = nil
     ) {
         self.typ = typ
-        self.alg = nil
+        self.alg = alg
         self.jku = jku
         self.jwk = jwk
         self.kid = kid
